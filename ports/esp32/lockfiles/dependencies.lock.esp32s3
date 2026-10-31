@@ -162,6 +162,17 @@ dependencies:
     - esp32s31
     - linux
     version: 2.6.0
+  espressif/yolo26:
+    component_hash: 9c48beab803c883cf88a094fad1941131cc5172dd95030f8afdbc36a7eea9bb4
+    dependencies:
+    - name: espressif/esp-dl
+      registry_url: https://components.espressif.com
+      require: private
+      version: ~3.3.14
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 0.1.1
   idf:
     source:
       type: idf
@@ -175,7 +186,8 @@ direct_dependencies:
 - espressif/pedestrian_detect
 - espressif/tinyusb
 - espressif/usb_host_uvc
+- espressif/yolo26
 - idf
-manifest_hash: 0e3f83e3bd25796da11bf80d3b5acc862201d568bd9a130014b551426f24acec
+manifest_hash: 96184c8b532158787dd11284252c91f41a903d5c190a7a857dc5b0c632d63388
 target: esp32s3
 version: 2.0.0
